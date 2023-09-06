@@ -11,8 +11,12 @@
     <groupId>com.lsharma11</groupId>
     <artifactId>SpringBootLearning</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <name>SpringBootLearning</name>
     <description>SpringBootLearning</description>
+    <modules>
+        <module>SpringDemo</module>
+    </modules>
     <properties>
         <java.version>11</java.version>
     </properties>
