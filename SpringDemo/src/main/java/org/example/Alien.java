@@ -2,6 +2,7 @@ package org.example;
 
 public class Alien {
     private int age;
+    private Laptop laptop;
 
     public Alien() {
         System.out.println("Alien object is being created...");
@@ -19,5 +20,14 @@ public class Alien {
 
     public void code() {
         System.out.println("Im Coding...");
+        laptop.compile();
+    }
+
+    public Laptop getLaptop() {
+        return laptop;
+    }
+
+    public void setLaptop(Laptop laptop) {
+        this.laptop = laptop;
     }
 }
