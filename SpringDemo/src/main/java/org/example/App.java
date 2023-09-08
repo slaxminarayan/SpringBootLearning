@@ -14,8 +14,17 @@ public class App
 //        BeanFactory factory = new XmlBeanFactory(new FileSystemResource("spring.xml"));
         ApplicationContext factory = new ClassPathXmlApplicationContext("spring.xml");
 
+        System.out.println( "Hello World!" );
+
+
         Alien alien = (Alien) factory.getBean("alian");
         alien.code();
-        System.out.println( "Hello World!" );
+        alien.setAge(10);
+        System.out.println("Alien age = " + alien.getAge());
+
+        Alien alien1 = (Alien) factory.getBean("alian");
+        alien1.code();
+        System.out.println("Alien age = " + alien1.getAge());
+
     }
 }
