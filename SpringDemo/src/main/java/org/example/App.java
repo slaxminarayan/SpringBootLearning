@@ -19,12 +19,7 @@ public class App
 
         Alien alien = (Alien) factory.getBean("alian");
         alien.code();
-        alien.setAge(10);
         System.out.println("Alien age = " + alien.getAge());
-
-        Alien alien1 = (Alien) factory.getBean("alian");
-        alien1.code();
-        System.out.println("Alien age = " + alien1.getAge());
 
     }
 }
