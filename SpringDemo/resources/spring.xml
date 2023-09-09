@@ -3,10 +3,12 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="alian" class="org.example.Alien" scope="prototype">
+    <bean id="alian" class="org.example.Alien" autowire="byName">
         <property name="age" value="12"></property>
-        <property name="laptop" ref="laptop"></property>
+        <property name="computer" ref="desktop"></property>
     </bean>
 
-    <bean id="laptop" class="org.example.Laptop"></bean>
+    <bean id="computer" class="org.example.Laptop"></bean>
+    <bean id="desktop" class="org.example.Desktop"></bean>
+
 </beans>
