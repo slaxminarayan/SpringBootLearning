@@ -5,7 +5,15 @@ public class Alien {
     private Laptop laptop;
 
     public Alien() {
+        System.out.println("Default Constructor Called...");
         System.out.println("Alien object is being created...");
+    }
+
+    public Alien(int age, Laptop laptop) {
+        System.out.println("Parameterised Constructor Called...");
+        System.out.println("Alien object is being created...");
+        this.age = age;
+        this.laptop = laptop;
     }
 
     public int getAge() {
