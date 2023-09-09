@@ -5,7 +5,6 @@
 
     <bean id="alian" class="org.example.Alien" autowire="byName">
         <property name="age" value="12"></property>
-        <property name="computer" ref="desktop"></property>
     </bean>
 
     <bean id="computer" class="org.example.Laptop"></bean>
